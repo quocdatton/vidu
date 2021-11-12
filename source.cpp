@@ -3,8 +3,9 @@ using namespace std;
 int hieu(int a, int b){
 	return a - b;
 };
-int tong(int a, int b);
-
+int hieu(int a, int b){
+	return a + b;
+};
 int main()
 {
 	int a, b;
@@ -17,13 +18,11 @@ int main()
 	cin >> phepToan;
 	if (pheptoan == '-')
 	{
-		int hieuso = hieu(a, b);
-		cout << "hieu la" << hieuso;
+		cout << "hieu la" << hieu(a, b);
 	}
-	else
+	else if (phepToan == '+')
 	{
-		return 0;
-	}
+		cout << "tong la" << tong(a,b);
 	system("pause");
 	return 0;
 }
