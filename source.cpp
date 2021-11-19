@@ -29,7 +29,7 @@ int main()
 	}
 	else
 	{
-		cout << "tich la:" << tich(a, b);
+		cout << "tich la:" << tich(a,b);
 	}
 	system("pause");
 	return 0;
