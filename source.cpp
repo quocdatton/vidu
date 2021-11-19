@@ -6,6 +6,9 @@ int hieu(int a, int b){
 int hieu(int a, int b){
 	return a + b;
 };
+int tich(int a, int b){
+	return a*b;
+};
 int main()
 {
 	int a, b;
@@ -14,7 +17,7 @@ int main()
 	cin >> a;
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
-	cout << "Chon phep toan (+,-) ";
+	cout << "Chon phep toan (+,-,*) ";
 	cin >> phepToan;
 	if (pheptoan == '-')
 	{
@@ -22,7 +25,12 @@ int main()
 	}
 	else if (phepToan == '+')
 	{
-		cout << "tong la" << tong(a,b);
+		cout << "tong la" << tong(a, b);
+	}
+	else
+	{
+		cout << "tich la:" << tich(a, b);
+	}
 	system("pause");
 	return 0;
 }
